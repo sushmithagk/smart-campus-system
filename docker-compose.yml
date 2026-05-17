@@ -1,0 +1,65 @@
+version: '3'
+
+services:
+
+  mysql:
+
+    image: mysql:8
+
+    container_name: mysql-container
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: campusdb
+
+    ports:
+      - "3307:3306"
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+    networks:
+      - smart-campus-network
+
+
+
+  backend:
+
+    build: ./backend
+
+    container_name: backend-container
+
+    ports:
+      - "5000:5000"
+
+    depends_on:
+      - mysql
+
+    networks:
+      - smart-campus-network
+
+
+
+  frontend:
+
+    build: ./frontend
+
+    container_name: frontend-container
+
+    ports:
+      - "3000:80"
+
+    depends_on:
+      - backend
+
+    networks:
+      - smart-campus-network
+
+
+
+networks:
+
+  smart-campus-network:
+
+volumes:
+  mysql_data:
