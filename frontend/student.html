@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Student Dashboard</title>
 
@@ -13,33 +18,58 @@
 
     <div class="container">
 
-        <h2>Student Dashboard</h2>
+        <h2>
+            🎓 Student Dashboard
+        </h2>
 
-        <!-- Raise Complaint Button -->
-        <a href="raise.html">
+        <p class="subtitle">
+            Manage complaints, track maintenance
+            requests, and stay updated easily.
+        </p>
 
-            <button>
-                Raise Complaint
-            </button>
+        <!-- DASHBOARD CARDS -->
 
-        </a>
+        <div class="dashboard-grid">
 
-        <br><br>
+            <a href="raise.html" class="dashboard-card">
 
-        <!-- Track Complaint Button -->
-        <a href="track.html">
+                <div class="icon">
+                    📝
+                </div>
 
-            <button>
-                Track Complaint Status
-            </button>
+                <h3>
+                    Raise Complaint
+                </h3>
 
-        </a>
+                <p>
+                    Submit new maintenance or campus complaints.
+                </p>
 
-        <br><br>
+            </a>
 
-        <!-- Logout Button -->
-        <button onclick="logout()">
-            Logout
+            <a href="track.html" class="dashboard-card">
+
+                <div class="icon">
+                    📌
+                </div>
+
+                <h3>
+                    Track Status
+                </h3>
+
+                <p>
+                    View complaint progress and status updates.
+                </p>
+
+            </a>
+
+        </div>
+
+        <button class="logout-btn"
+                onclick="logout()">
+
+            🚪 Logout
+
         </button>
 
     </div>

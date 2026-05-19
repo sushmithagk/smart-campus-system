@@ -1,25 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Admin Dashboard</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container admin-container">
 
-        <h2>Admin Dashboard</h2>
+        <h2>
+            🛠️ Admin Dashboard
+        </h2>
 
-        <div id="complaintsData">
+        <p class="subtitle">
+            Monitor complaints, manage maintenance
+            requests, and update complaint status.
+        </p>
+
+        <!-- STATS SECTION -->
+
+        <div class="stats-grid">
+
+            <div class="stats-card">
+
+                <h3>
+                    📋 Total
+                </h3>
+
+                <p>
+                    24 Complaints
+                </p>
+
+            </div>
+
+            <div class="stats-card">
+
+                <h3>
+                    ⏳ Pending
+                </h3>
+
+                <p>
+                    8 Complaints
+                </p>
+
+            </div>
+
+            <div class="stats-card">
+
+                <h3>
+                    🔧 In Progress
+                </h3>
+
+                <p>
+                    10 Complaints
+                </p>
+
+            </div>
+
+            <div class="stats-card">
+
+                <h3>
+                    ✅ Resolved
+                </h3>
+
+                <p>
+                    6 Complaints
+                </p>
+
+            </div>
 
         </div>
 
-        <br>
+        <!-- COMPLAINT DATA -->
 
-        <button onclick="adminLogout()">
-            Logout
+        <div id="complaintsData">
+
+            <!-- SAMPLE COMPLAINT CARD -->
+
+            <div class="admin-card">
+
+                <div class="status-top">
+
+                    <h3>
+                        Water Leakage
+                    </h3>
+
+                    <span class="status-badge pending-badge">
+                        Pending
+                    </span>
+
+                </div>
+
+                <p>
+                    📍 Block A - 2nd Floor
+                </p>
+
+                <p>
+                    Leakage reported near classroom corridor.
+                </p>
+
+                <div class="admin-actions">
+
+                    <button class="progress-btn">
+                        Mark In Progress
+                    </button>
+
+                    <button class="resolve-btn">
+                        Mark Resolved
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="admin-card">
+
+                <div class="status-top">
+
+                    <h3>
+                        Classroom Fan Repair
+                    </h3>
+
+                    <span class="status-badge progress-badge">
+                        In Progress
+                    </span>
+
+                </div>
+
+                <p>
+                    📍 Room 204
+                </p>
+
+                <p>
+                    Technician assigned for maintenance.
+                </p>
+
+                <div class="admin-actions">
+
+                    <button class="resolve-btn">
+                        Mark Resolved
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="logout-btn"
+                onclick="adminLogout()">
+
+            🚪 Logout
+
         </button>
 
     </div>

@@ -1,32 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Track Complaint</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <h2>Complaint Status</h2>
+        <h2>
+            📌 Complaint Status
+        </h2>
+
+        <p class="subtitle">
+            Track submitted complaints and monitor
+            maintenance progress in real time.
+        </p>
+
+        <!-- TRACKING DATA -->
 
         <div id="trackData">
 
-        </div>
+            <!-- SAMPLE CARD -->
 
-        <br>
+            <div class="status-card pending">
+
+                <div class="status-top">
+
+                    <h3>
+                        Water Leakage
+                    </h3>
+
+                    <span class="status-badge pending-badge">
+                        Pending
+                    </span>
+
+                </div>
+
+                <p>
+                    📍 Block A - 2nd Floor
+                </p>
+
+                <p>
+                    Complaint submitted and waiting
+                    for admin review.
+                </p>
+
+            </div>
+
+            <div class="status-card progress">
+
+                <div class="status-top">
+
+                    <h3>
+                        Classroom Fan Repair
+                    </h3>
+
+                    <span class="status-badge progress-badge">
+                        In Progress
+                    </span>
+
+                </div>
+
+                <p>
+                    📍 Room 204
+                </p>
+
+                <p>
+                    Technician assigned and work
+                    currently ongoing.
+                </p>
+
+            </div>
+
+            <div class="status-card resolved">
+
+                <div class="status-top">
+
+                    <h3>
+                        WiFi Connectivity
+                    </h3>
+
+                    <span class="status-badge resolved-badge">
+                        Resolved
+                    </span>
+
+                </div>
+
+                <p>
+                    📍 Library Building
+                </p>
+
+                <p>
+                    Issue fixed successfully and
+                    marked as completed.
+                </p>
+
+            </div>
+
+        </div>
 
         <a href="student.html">
 
-            <button>
-                Back
+            <button class="secondary-btn">
+
+                ⬅ Back to Dashboard
+
             </button>
 
         </a>
-
-        
 
     </div>
 

@@ -1,32 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Student Register</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <h2>Student Registration</h2>
+        <h2>
+            📝 Student Registration
+        </h2>
 
-        <input type="text" id="name" placeholder="Enter Name">
+        <p class="subtitle">
+            Create your account to access the
+            Smart Campus Complaint System.
+        </p>
 
-        <input type="email" id="regEmail" placeholder="Enter Email">
+        <input 
+            type="text"
+            id="name"
+            placeholder="Enter Full Name"
+        >
 
-        <input type="password" id="regPassword" placeholder="Enter Password">
+        <input 
+            type="email"
+            id="regEmail"
+            placeholder="Enter Email"
+        >
+
+        <input 
+            type="password"
+            id="regPassword"
+            placeholder="Create Password"
+        >
 
         <button onclick="registerStudent()">
             Register
         </button>
 
-        <p>
-            Already have account?
-            <a href="student-login.html">Login</a>
+        <p class="register-text">
+
+            Already have an account?
+
+            <a href="student-login.html">
+                Login Here
+            </a>
+
         </p>
 
+        <a href="index.html">
+
+            <button class="secondary-btn">
+                ⬅ Back to Home
+            </button>
+
+        </a>
 
     </div>
 

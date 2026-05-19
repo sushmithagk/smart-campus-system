@@ -1,35 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Raise Complaint</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <h2>Raise Complaint</h2>
+        <h2>
+            📝 Raise Complaint
+        </h2>
 
-        <input type="text"
-               id="issue"
-               placeholder="Enter Issue">
+        <p class="subtitle">
+            Submit maintenance or campus-related
+            issues for quick resolution.
+        </p>
 
-        <input type="text"
-               id="location"
-               placeholder="Enter Location">
+        <input 
+            type="text"
+            id="issue"
+            placeholder="Enter Issue"
+        >
+
+        <input 
+            type="text"
+            id="location"
+            placeholder="Enter Location"
+        >
+
+        <textarea
+            id="description"
+            rows="5"
+            placeholder="Describe the issue in detail..."
+        ></textarea>
+
+        <select id="priority">
+
+            <option>
+                Select Priority
+            </option>
+
+            <option>
+                Low
+            </option>
+
+            <option>
+                Medium
+            </option>
+
+            <option>
+                High
+            </option>
+
+        </select>
 
         <button onclick="submitComplaint()">
-            Submit Complaint
-        </button>
 
-        <br><br>
+            🚀 Submit Complaint
+
+        </button>
 
         <a href="student.html">
 
-            <button>
-                Back
+            <button class="secondary-btn">
+
+                ⬅ Back to Dashboard
+
             </button>
 
         </a>
